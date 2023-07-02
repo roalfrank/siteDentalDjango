@@ -1,1 +1,7 @@
-blog
+<a href='{% url 'blog:create' %}'>crear post</a>
+
+<ul>
+{% for post in  lista_post %}
+   <li> <a href='#'>  {{post.title }} </a></li>
+{% endfor %}
+</ul>
